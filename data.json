@@ -1,0 +1,21 @@
+[
+  {
+    "starter":"Allison",
+    "position":"goalie"
+  },
+  {
+    "starter":"Virgil van Dijk",
+    "position":"defender"
+  },
+  {
+    "starter":"Fabinho",
+    "position":"midfielder"
+  },
+  {"starter":"Thiago",
+    "position":"midfielder"
+    },
+  {
+    "starter":"Mo Salah",
+    "position":"foward"
+  }
+]
