@@ -25,11 +25,11 @@
           <ul>
             {
             props.list.map( 
-                (item,index) => (
+                (item,index) => {
                   <li key={index}><strong>
           {item.starter}</strong>, <em>{item.position}</em>
                   </li>
-                )
+                }
               )
             }
           </ul>
