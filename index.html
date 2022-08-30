@@ -38,7 +38,7 @@
     //whenever we define a function inside a JSX expression, we have to use () ibstead of {} to contain the function's code block
           (item, index) => (
           <p key={index}>
-        <a href={item.link}>{item.first}</a>
+        <a href={item.link} id={item.id}>{item.first}</a>
   </p>
           )
         )
