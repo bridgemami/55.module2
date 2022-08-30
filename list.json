@@ -2,21 +2,21 @@
   {
     "first": "Mike",
     "link": "https://www.espn.com",
-    "color": "blue"
+    "color": "#b7b456"
   },
   {
     "first": "Maria",
     "link": "https://www.google.com",
-    "color": "red"
+    "color": "#713699"
     },
   {
     "first": "John",
     "link": "https://www.expedia.com",
-    "color": "green"
+    "color": "#a59634"
   },
   {
     "first": "Amy",
     "link": "https://www.49ers.com",
-    "color": "brown"
+    "color": "#45ef46"
   }
 ]

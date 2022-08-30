@@ -30,20 +30,20 @@
     function ProjectList(props) {
    //console.log(props);
       // return some output for the component using JSX
-    return <ol>
+    return <section>
         {
     // use map() to loop thru array passed in props.list, creating new element for each array value
         props.list.map(
          // copy current array value into item and pass to arrow function
     //whenever we define a function inside a JSX expression, we have to use () ibstead of {} to contain the function's code block
           (item, index) => (
-          <li key={index}>
+          <p key={index}>
         <a href={item.link}>{item.first}</a>
-  </li>
+  </p>
           )
         )
         }
-  </ol>;
+  </section>;
     }
     // use jQuery to load JSON data from our server
     $.getJSON('x',
