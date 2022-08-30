@@ -2,21 +2,25 @@
   {
     "first": "Mike",
     "link": "https://www.espn.com",
-    "color": "#b7b456"
+    "color": "#b7b456",
+    "background":"#ccbbaa"
   },
   {
     "first": "Maria",
     "link": "https://www.google.com",
-    "color": "#713699"
+    "color": "#713699",
+    "background":"#ddccbb"
     },
   {
     "first": "John",
     "link": "https://www.expedia.com",
-    "color": "#a59634"
+    "color": "#a59634",
+    "background":"#eeddcc"
   },
   {
     "first": "Amy",
     "link": "https://www.49ers.com",
-    "color": "#45ef46"
+    "color": "#45ef46",
+    "background":"#ffeedd"
   }
 ]
