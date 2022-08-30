@@ -1,0 +1,22 @@
+[
+  {
+    "first": "Mike",
+    "link": "https://www.espn.com",
+    "color": "blue"
+  },
+  {
+    "first": "Maria",
+    "link": "https://www.google.com",
+    "color": "red"
+    },
+  {
+    "first": "John",
+    "link": "https://www.expedia.com",
+    "color": "green"
+  },
+  {
+    "first": "Amy",
+    "link": "https://www.49ers.com",
+    "color": "brown"
+  }
+]

@@ -28,7 +28,7 @@ const requestListener = function (myRequest, myResponse) {
   }
   else {
     // if request url not root, return json file
-    fs.readFile (__dirname + "/data.json"  ).then( contents => {
+    fs.readFile (__dirname + "/list.json"  ).then( contents => {
     // set http response header entry
       myResponse.setHeader("Content-Type", "application/json; charset= UTF-8");
   // return 200 OK http status code
