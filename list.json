@@ -3,28 +3,36 @@
     "id": "one",
     "first": "Mike",
     "link": "https://www.espn.com",
-    "color": "#b7b456",
-    "background":"#ccbbaa"
+    "color": "yellow",
+    "background":"#ccbbaa",
+    "width":"25vw",
+    "height": "10vh"
   },
   {
     "id": "two",
     "first": "Maria",
     "link": "https://www.google.com",
     "color": "#713699",
-    "background":"#ddccbb"
+    "background":"red",
+    "width":"50vw",
+    "height": "15vh"
     },
   {
     "id": "three",
     "first": "John",
     "link": "https://www.expedia.com",
     "color": "#a59634",
-    "background":"#eeddcc"
+    "background":"yellow",
+    "width":"75vw",
+    "height": "20vh"
   },
   {
     "id": "four",
     "first": "Amy",
     "link": "https://www.49ers.com",
     "color": "#45ef46",
-    "background":"#ffeedd"
+    "background":"black",
+    "width":"100vw",
+    "height": "25vh"
   }
 ]
