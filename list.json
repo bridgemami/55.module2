@@ -1,35 +1,31 @@
 [
   {
-    "id": "one",
-    "first": "Mike",
-    "link": "https://www.espn.com",
+    "id": 1,
+   "quote":"Do. Or do not. There is no try",
     "color": "yellow",
     "background":"#ccbbaa",
     "width":"25vw",
     "height": "10vh"
   },
   {
-    "id": "two",
-    "first": "Maria",
-    "link": "https://www.google.com",
+    "id": 2,
+   "quote": "It’s a dangerous business, Frodo, going out your door. You step onto the road, and if you don’t keep your feet, there’s no knowing where you might be swept off to.",
     "color": "#713699",
     "background":"red",
     "width":"50vw",
     "height": "15vh"
     },
   {
-    "id": "three",
-    "first": "John",
-    "link": "https://www.expedia.com",
+    "id": 3,
+    "quote":"It is our choices, Harry, that show what we truly are, far more than our abilities.",
     "color": "#a59634",
     "background":"yellow",
     "width":"75vw",
     "height": "20vh"
   },
   {
-    "id": "four",
-    "first": "Amy",
-    "link": "https://www.49ers.com",
+    "id": 4,
+    "quote":"The greatest teacher, failure is.",
     "color": "#45ef46",
     "background":"black",
     "width":"100vw",

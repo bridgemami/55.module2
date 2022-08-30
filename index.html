@@ -16,7 +16,7 @@
 	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
-  <h1>Hello and Welcome</h1>
+  <h1>My favorite quotes:</h1>
   <!-- create an element that can be the root element for your react application -->
   <div id="myApp">
     
@@ -37,8 +37,8 @@
          // copy current array value into item and pass to arrow function
     //whenever we define a function inside a JSX expression, we have to use () ibstead of {} to contain the function's code block
           (item, index) => (
-          <div key={index} style={{backgroundColor: item.background, width:item.width, height: item.height, textAlign: "center"}}>
-        <a href={item.link} id={item.id} style={{color: item.color}}>{item.first}</a>
+          <div key={index} style={{backgroundColor: item.background, width:item.width, height: item.height}}>
+        <p id={item.id} style={{color: item.color}}>{item.quote}</p>
   </div>
           )
         )
