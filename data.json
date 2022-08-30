@@ -1,13 +1,10 @@
 [
-  {
-    "first": "Mike",
+  {"first": "Mike",
     "link": "https://www.espn.com"},
   {"first": "Tania",
     "link": "https://www.google.com"},
   {"first": "John",
     "link": "https://www.expedia.com"},
-  {
-    "first": "Trey",
-    "link": "https://www.49ers.com"
-  },
+  {"first": "Trey",
+    "link": "https://www.49ers.com"}
 ]

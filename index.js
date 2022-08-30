@@ -16,7 +16,7 @@ const requestListener = function (myRequest, myResponse) {
   if (myRequest.url === "/") {
     // check request url, if root, return html file
     //special variable __dirname has absolute path of where node code is running
-    fs.readFile (__dirname + "/page.html"  ).then( contents => {
+    fs.readFile (__dirname + "/index.html"  ).then( contents => {
      // set http response header entry
       myResponse.setHeader("Content-Type", "text/html; charset= UTF-8");
       // return 200 OK http status code
