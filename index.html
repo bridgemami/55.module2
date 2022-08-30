@@ -37,7 +37,7 @@
          // copy current array value into item and pass to arrow function
     //whenever we define a function inside a JSX expression, we have to use () ibstead of {} to contain the function's code block
           (item, index) => (
-          <div key={index} style={{backgroundColor: item.background, width:item.width, height: item.height}}>
+          <div key={index} style={{backgroundColor: item.background, width:item.width, height: item.height, textAlign: "center"}}>
         <a href={item.link} id={item.id} style={{color: item.color}}>{item.first}</a>
   </div>
           )
