@@ -1,48 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Module 2 for CS55.13</title>
- <style>
-   * {
-     color: black;
-     font-family: Arial, Helvetica, sans-serif;
-     background-color: red;
-   }
- </style>
- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+	<!-- load jquery to use for external json loading -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- load React - note when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+  <!-- load babel transpiler to convert React's JSX markup to pure JavaScript
+       Note: we only need babel loaded in the browser if we are not using a build system 
+       where babel would save pure JS files to be loaded by the browser instead -->
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
-  <div id="myLfc"></div>
+  <h1>My favorite quotes:</h1>
+  <!-- create an element that can be the root element for your react application -->
+  <div id="myApp">
+    
+  </div>
+  <!-- load our custom script with react component -->
+  <!-- the type atribute value of text/babel tells browser to use babel to parse the code -->
   <script type="text/babel">
-  "use strict";
-  function LfcList(props) {
-      return <div>
-          <ul>
-            {
-            props.list.map( 
-                (item,index) => (
-                  <li key={index}><strong>
-          {item.starter}</strong>, <em>{item.position}</em>
-                  </li>
-                )
-              )
-            }
-          </ul>
-        </div>;
+    "use strict";
+    // define a react page component (some JSX that will get react to make html elements
+  // in the view (html output) based on the data it receives from the model (json) and  ProjectList is capped
+    function ProjectList(props) {
+   //console.log(props);
+      // return some output for the component using JSX
+    return <section>
+        {
+    // use map() to loop thru array passed in props.list, creating new element for each array value
+        props.list.map(
+         // copy current array value into item and pass to arrow function
+    //whenever we define a function inside a JSX expression, we have to use () ibstead of {} to contain the function's code block
+          (item, index) => (
+          <div key={index} style={{backgroundColor: item.background, width:item.width, height: item.height, color: item.color}}>
+        <blockquote id={item.id}>{item.quote}</blockquote>
+    <p style={{fontWeight:"bold"}}>-{item.author}</p>
+  </div>
+          )
+        )
+        }
+  </section>;
     }
-  jQuery.getJSON("anything", function(jsonFromJquery) {
-    ReactDOM.render(
-      <LfcList list={jsonFromJquery} />,
-      document.getElementById("myLfc")
+    // use jQuery to load JSON data from our server
+    $.getJSON('x',
+  //url for jQuery to ask for json file
+    function (jsonFromJquery) {
+    // after JSON loaded, call react createRoot() to identify root HTML element for app
+    const myRoot = ReactDOM.createRoot( document.getElementById('myApp'));
+    // then call react render() to output component into existing element and <function projectList>
+    myRoot.render(
+    <ProjectList list= {jsonFromJquery} />
     );
-  }
-  );
+    }
+    );
+    
   </script>
 </body>
 </html>
-

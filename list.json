@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+   "quote":"\"Do. Or do not. There is no try.\"",
+    "author": "Yoda",
+    "color": "yellow",
+    "background":"#ccbbaa",
+    "width":"25vw",
+    "height": "20vh"
+  },
+  {
+    "id": 2,
+    "quote":"\"It is our choices, Harry, that show what we truly are, far more than our abilities.\"",
+    "author": "Albus Dumbledore",
+    "color": "#fedcba",
+    "background":"brown",
+    "width":"50vw",
+    "height": "25vh"
+  },
+  {
+    "id": 3,
+    "quote":"\"The greatest teacher, failure is.\"",
+    "author": "Yoda",
+    "color": "#45ef46",
+    "background":"black",
+    "width":"75vw",
+    "height": "30vh"
+  },
+  {
+    "id": 4,
+   "quote": "\"It’s a dangerous business, Frodo, going out your door. You step onto the road, and if you don’t keep your feet, there’s no knowing where you might be swept off to.\"",
+    "author": "Biblo Baggins",
+    "color": "#713699",
+    "background":"red",
+    "width":"100vw",
+    "height": "35vh"
+    }
+]
