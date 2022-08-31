@@ -18,7 +18,7 @@
 <body>
   <h1>My favorite quotes:</h1>
   <!-- create an element that can be the root element for your react application -->
-  <div id="myApp">
+  <div id="box">
     
   </div>
   <!-- load our custom script with react component -->
@@ -51,7 +51,7 @@
   //url for jQuery to ask for json file
     function (jsonFromJquery) {
     // after JSON loaded, call react createRoot() to identify root HTML element for app
-    const myRoot = ReactDOM.createRoot( document.getElementById('myApp'));
+    const myRoot = ReactDOM.createRoot( document.getElementById('box'));
     // then call react render() to output component into existing element and <function projectList>
     myRoot.render(
     <ProjectList list= {jsonFromJquery} />
